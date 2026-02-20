@@ -463,7 +463,7 @@
                                     </li>
                                     <li class="item">
                                         <a href="#" class="hasicon" title="COFFEE TABLE">
-                                            <img src="{% static 'img/home/coffee' %}_table.png" alt="img">COFFEE
+                                            <img src="{% static 'img/home/coffee_table.png' %}" alt="img">COFFEE
                                             TABLE</a>
                                     </li>
                                     <li class="item">
@@ -491,7 +491,7 @@
                                     </li>
                                     <li class="item toggleable menu-hidden">
                                         <a href="#" class="hasicon" title="CEILING FAN">
-                                            <img src="{% static 'img/home/ceiling' %}_fan.png" alt="img">CEILING FAN</a>
+                                            <img src="{% static 'img/home/ceiling_fan.png' %}" alt="img">CEILING FAN</a>
                                     </li>
                                     <li class="item toggleable menu-hidden">
                                         <a href="#" class="hasicon" title="WARDROBE">
@@ -500,7 +500,7 @@
                                     </li>
                                     <li class="item toggleable menu-hidden">
                                         <a href="#" class="hasicon" title="FLOOR LAMP">
-                                            <img src="{% static 'img/home/floor' %}_lamp.png" alt="img">FLOOR LAMP</a>
+                                            <img src="{% static 'img/home/floor_lamp.png' %}" alt="img">FLOOR LAMP</a>
                                     </li>
                                     <li class="item toggleable menu-hidden">
                                         <a href="#" class="hasicon" title="VASE-FLOWER">
@@ -563,7 +563,7 @@
                                             <div class="block-content">
                                                 <div class="policy-item">
                                                     <div class="policy-content iconpolicy1">
-                                                        <img src="{% static 'img/home/home' %}1-policy.png" alt="img">
+                                                        <img src="{% static 'img/home/home1-policy.png' %}" alt="img">
                                                         <div class="policy-name mb-5">FREE DELIVERY FROM $ 250</div>
                                                         <div class="policy-des">Lorem ipsum dolor amet consectetur</div>
                                                     </div>
@@ -576,7 +576,7 @@
                                             <div class="block-content">
                                                 <div class="policy-item">
                                                     <div class="policy-content iconpolicy2">
-                                                        <img src="{% static 'img/home/home' %}1-policy2.png" alt="img">
+                                                        <img src="{% static 'img/home/home1-policy2.png' %}" alt="img">
                                                         <div class="policy-name mb-5">FREE INSTALLATION</div>
                                                         <div class="policy-des">Lorem ipsum dolor amet consectetur</div>
                                                     </div>
@@ -589,7 +589,7 @@
                                             <div class="block-content">
                                                 <div class="policy-item">
                                                     <div class="policy-content iconpolicy3">
-                                                        <img src="{% static 'img/home/home' %}1-policy3.png" alt="img">
+                                                        <img src="{% static 'img/home/home1-policy3.png' %}" alt="img">
                                                         <div class="policy-name mb-5">MONEY BACK GUARANTEED</div>
                                                         <div class="policy-des">Lorem ipsum dolor amet consectetur</div>
                                                     </div>
@@ -617,40 +617,40 @@
                                                 <div class="cate-child-vertical">
                                                     <ul class="d-flex align-items-start flex-column">
                                                         <li>
-                                                            <a href="products-list.html">SIDE TABLE</a>
+                                                            <a href="{% url 'products:list' %}">SIDE TABLE</a>
                                                         </li>
                                                         <li>
-                                                            <a href="products-list.html">FIREPLACE</a>
+                                                            <a href="{% url 'products:list' %}">FIREPLACE</a>
                                                         </li>
                                                         <li>
-                                                            <a href="products-list.html">FLOOR LAMP</a>
+                                                            <a href="{% url 'products:list' %}">FLOOR LAMP</a>
                                                         </li>
                                                         <li>
-                                                            <a href="products-list.html">OTTOMAN</a>
+                                                            <a href="{% url 'products:list' %}">OTTOMAN</a>
                                                         </li>
                                                         <li>
-                                                            <a href="products-list.html">ARMCHAIR</a>
+                                                            <a href="{% url 'products:list' %}">ARMCHAIR</a>
                                                         </li>
                                                         <li>
-                                                            <a href="products-list.html">CUSHION</a>
+                                                            <a href="{% url 'products:list' %}">CUSHION</a>
                                                         </li>
                                                         <li>
-                                                            <a href="products-list.html">DRESSING TABLE</a>
+                                                            <a href="{% url 'products:list' %}">DRESSING TABLE</a>
                                                         </li>
                                                         <li>
-                                                            <a href="products-list.html">WALL CLOCK</a>
+                                                            <a href="{% url 'products:list' %}">WALL CLOCK</a>
                                                         </li>
                                                         <li>
-                                                            <a href="products-list.html">BEDSIDE TABLE</a>
+                                                            <a href="{% url 'products:list' %}">BEDSIDE TABLE</a>
                                                         </li>
                                                         <li>
-                                                            <a href="products-list.html">PICTURE</a>
+                                                            <a href="{% url 'products:list' %}">PICTURE</a>
                                                         </li>
                                                         <li>
-                                                            <a href="products-list.html">WINDOW</a>
+                                                            <a href="{% url 'products:list' %}">WINDOW</a>
                                                         </li>
                                                         <li class="last float-right">
-                                                            <a href="products-list.html">View all</a>
+                                                            <a href="{% url 'products:list' %}">View all</a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -676,7 +676,7 @@
                                                             <div class="item text-center">
                                                                 <div class="product-miniature first-item js-product-miniature item-one">
                                                                     <div class="thumbnail-container">
-                                                                        <a href="product-detail.html">
+                                                                        <a href="{% url 'products:list' %}">
                                                                             <img class="img-fluid image-cover"
                                                                                  src="{% static 'img/product/' %}1.jpg"
                                                                                  alt="img">
@@ -699,7 +699,7 @@
                                                                     <div class="product-description">
                                                                         <div class="product-groups">
                                                                             <div class="product-title">
-                                                                                <a href="product-detail.html">Nulla et
+                                                                                <a href="{% url 'products:list' %}">Nulla et
                                                                                     justo non augue</a>
                                                                             </div>
                                                                             <div class="rating">
@@ -746,7 +746,7 @@
                                                             <div class="item text-center">
                                                                 <div class="product-miniature js-product-miniature item-one first-item">
                                                                     <div class="thumbnail-container">
-                                                                        <a href="product-detail.html">
+                                                                        <a href="{% url 'products:list' %}">
                                                                             <img class="img-fluid image-cover"
                                                                                  src="{% static 'img/product/' %}3.jpg"
                                                                                  alt="img">
@@ -769,7 +769,7 @@
                                                                     <div class="product-description">
                                                                         <div class="product-groups">
                                                                             <div class="product-title">
-                                                                                <a href="product-detail.html">Nam semper
+                                                                                <a href="{% url 'products:list' %}">Nam semper
                                                                                     a ligula nec</a>
                                                                             </div>
                                                                             <div class="rating">
@@ -816,7 +816,7 @@
                                                             <div class="item text-center">
                                                                 <div class="product-miniature js-product-miniature item-one first-item">
                                                                     <div class="thumbnail-container">
-                                                                        <a href="product-detail.html">
+                                                                        <a href="{% url 'products:list' %}">
                                                                             <img class="img-fluid image-cover"
                                                                                  src="{% static 'img/product/' %}2.jpg"
                                                                                  alt="img">
@@ -838,7 +838,7 @@
                                                                     <div class="product-description">
                                                                         <div class="product-groups">
                                                                             <div class="product-title">
-                                                                                <a href="product-detail.html">Phasellus
+                                                                                <a href="{% url 'products:list' %}">Phasellus
                                                                                     vitae...</a>
                                                                             </div>
                                                                             <div class="rating">
@@ -888,7 +888,7 @@
                                                             <div class="item text-center">
                                                                 <div class="product-miniature js-product-miniature item-one first-item">
                                                                     <div class="thumbnail-container">
-                                                                        <a href="product-detail.html">
+                                                                        <a href="{% url 'products:list' %}">
                                                                             <img class="img-fluid image-cover"
                                                                                  src="{% static 'img/product/' %}4.jpg"
                                                                                  alt="img">
@@ -911,7 +911,7 @@
                                                                     <div class="product-description">
                                                                         <div class="product-groups">
                                                                             <div class="product-title">
-                                                                                <a href="product-detail.html">Nam semper
+                                                                                <a href="{% url 'products:list' %}">Nam semper
                                                                                     a ligula nec</a>
                                                                             </div>
                                                                             <div class="rating">
@@ -958,7 +958,7 @@
                                                             <div class="item text-center">
                                                                 <div class="product-miniature js-product-miniature item-one first-item">
                                                                     <div class="thumbnail-container">
-                                                                        <a href="product-detail.html">
+                                                                        <a href="{% url 'products:list' %}">
                                                                             <img class="img-fluid image-cover"
                                                                                  src="{% static 'img/product/' %}5.jpg"
                                                                                  alt="img">
@@ -981,7 +981,7 @@
                                                                     <div class="product-description">
                                                                         <div class="product-groups">
                                                                             <div class="product-title">
-                                                                                <a href="product-detail.html">Nulla et
+                                                                                <a href="{% url 'products:list' %}">Nulla et
                                                                                     justo non augue</a>
                                                                             </div>
                                                                             <div class="rating">
@@ -1028,7 +1028,7 @@
                                                             <div class="item text-center">
                                                                 <div class="product-miniature js-product-miniature item-one first-item">
                                                                     <div class="thumbnail-container">
-                                                                        <a href="product-detail.html">
+                                                                        <a href="{% url 'products:list' %}">
                                                                             <img class="img-fluid image-cover"
                                                                                  src="{% static 'img/product/' %}6.jpg"
                                                                                  alt="img">
@@ -1050,7 +1050,7 @@
                                                                     <div class="product-description">
                                                                         <div class="product-groups">
                                                                             <div class="product-title">
-                                                                                <a href="product-detail.html">Nulla et
+                                                                                <a href="{% url 'products:list' %}">Nulla et
                                                                                     justo non augue</a>
                                                                             </div>
                                                                             <div class="rating">
@@ -1100,7 +1100,7 @@
                                                             <div class="item text-center">
                                                                 <div class="product-miniature js-product-miniature item-one first-item">
                                                                     <div class="thumbnail-container">
-                                                                        <a href="product-detail.html">
+                                                                        <a href="{% url 'products:list' %}">
                                                                             <img class="img-fluid image-cover"
                                                                                  src="{% static 'img/product/' %}7.jpg"
                                                                                  alt="img">
@@ -1123,7 +1123,7 @@
                                                                     <div class="product-description">
                                                                         <div class="product-groups">
                                                                             <div class="product-title">
-                                                                                <a href="product-detail.html">Nulla et
+                                                                                <a href="{% url 'products:list' %}">Nulla et
                                                                                     justo non augue</a>
                                                                             </div>
                                                                             <div class="rating">
@@ -1170,7 +1170,7 @@
                                                             <div class="item text-center">
                                                                 <div class="product-miniature js-product-miniature item-one first-item">
                                                                     <div class="thumbnail-container">
-                                                                        <a href="product-detail.html">
+                                                                        <a href="{% url 'products:list' %}">
                                                                             <img class="img-fluid image-cover"
                                                                                  src="{% static 'img/product/' %}8.jpg"
                                                                                  alt="img">
@@ -1193,7 +1193,7 @@
                                                                     <div class="product-description">
                                                                         <div class="product-groups">
                                                                             <div class="product-title">
-                                                                                <a href="product-detail.html">Nulla et
+                                                                                <a href="{% url 'products:list' %}">Nulla et
                                                                                     justo non augue</a>
                                                                             </div>
                                                                             <div class="rating">
@@ -1240,7 +1240,7 @@
                                                             <div class="item text-center">
                                                                 <div class="product-miniature js-product-miniature item-one first-item">
                                                                     <div class="thumbnail-container">
-                                                                        <a href="product-detail.html">
+                                                                        <a href="{% url 'products:list' %}">
                                                                             <img class="img-fluid image-cover"
                                                                                  src="{% static 'img/product/9.jpg' %}"
                                                                                  alt="img">
@@ -1263,7 +1263,7 @@
                                                                     <div class="product-description">
                                                                         <div class="product-groups">
                                                                             <div class="product-title">
-                                                                                <a href="product-detail.html">Nulla et
+                                                                                <a href="{% url 'products:list' %}">Nulla et
                                                                                     justo non augue</a>
                                                                             </div>
                                                                             <div class="rating">
@@ -1357,7 +1357,7 @@
                                                             tempor incididunt ut labore dolore magna aliqua.
                                                         </p>
                                                         <div>
-                                                            <a href="products-list.html"> View all product </a>
+                                                            <a href="{% url 'products:list' %}"> View all product </a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1370,7 +1370,7 @@
                                                                 <div class="item text-center">
                                                                     <div class="product-miniature js-product-miniature item-one first-item">
                                                                         <div class="thumbnail-container">
-                                                                            <a href="product-detail.html">
+                                                                            <a href="{% url 'products:list' %}">
                                                                                 <img class="img-fluid image-cover"
                                                                                      src="{% static 'img/product/' %}26.jpg"
                                                                                      alt="img">
@@ -1392,7 +1392,7 @@
                                                                         <div class="product-description">
                                                                             <div class="product-groups">
                                                                                 <div class="product-title">
-                                                                                    <a href="product-detail.html">Nulla
+                                                                                    <a href="{% url 'products:list' %}">Nulla
                                                                                         et justo non augue</a>
                                                                                 </div>
                                                                                 <div class="product-group-price">
@@ -1431,7 +1431,7 @@
                                                                     </div>
                                                                     <div class="product-miniature js-product-miniature item-one first-item">
                                                                         <div class="thumbnail-container">
-                                                                            <a href="product-detail.html">
+                                                                            <a href="{% url 'products:list' %}">
                                                                                 <img class="img-fluid image-cover"
                                                                                      src="{% static 'img/product/' %}25.jpg"
                                                                                      alt="img">
@@ -1453,7 +1453,7 @@
                                                                         <div class="product-description">
                                                                             <div class="product-groups">
                                                                                 <div class="product-title">
-                                                                                    <a href="product-detail.html">Nulla
+                                                                                    <a href="{% url 'products:list' %}">Nulla
                                                                                         et justo non augue</a>
                                                                                 </div>
                                                                                 <div class="product-group-price">
@@ -1495,7 +1495,7 @@
                                                                 <div class="item text-center">
                                                                     <div class="product-miniature js-product-miniature item-one first-item">
                                                                         <div class="thumbnail-container">
-                                                                            <a href="product-detail.html">
+                                                                            <a href="{% url 'products:list' %}">
                                                                                 <img class="img-fluid image-cover"
                                                                                      src="{% static 'img/product/' %}10.jpg"
                                                                                      alt="img">
@@ -1517,7 +1517,7 @@
                                                                         <div class="product-description">
                                                                             <div class="product-groups">
                                                                                 <div class="product-title">
-                                                                                    <a href="product-detail.html">Nulla
+                                                                                    <a href="{% url 'products:list' %}">Nulla
                                                                                         et justo non augue</a>
                                                                                 </div>
                                                                                 <div class="product-group-price">
@@ -1553,7 +1553,7 @@
                                                                     </div>
                                                                     <div class="product-miniature js-product-miniature item-one first-item">
                                                                         <div class="thumbnail-container">
-                                                                            <a href="product-detail.html">
+                                                                            <a href="{% url 'products:list' %}">
                                                                                 <img class="img-fluid image-cover"
                                                                                      src="{% static 'img/product/' %}3.jpg"
                                                                                      alt="img">
@@ -1575,7 +1575,7 @@
                                                                         <div class="product-description">
                                                                             <div class="product-groups">
                                                                                 <div class="product-title">
-                                                                                    <a href="product-detail.html">Nulla
+                                                                                    <a href="{% url 'products:list' %}">Nulla
                                                                                         et justo non augue</a>
                                                                                 </div>
                                                                                 <div class="product-group-price">
@@ -1616,7 +1616,7 @@
                                                                 <div class="item text-center">
                                                                     <div class="product-miniature js-product-miniature item-one first-item">
                                                                         <div class="thumbnail-container">
-                                                                            <a href="product-detail.html">
+                                                                            <a href="{% url 'products:list' %}">
                                                                                 <img class="img-fluid image-cover"
                                                                                      src="{% static 'img/product/' %}24.jpg"
                                                                                      alt="img">
@@ -1638,7 +1638,7 @@
                                                                         <div class="product-description">
                                                                             <div class="product-groups">
                                                                                 <div class="product-title">
-                                                                                    <a href="product-detail.html">Nulla
+                                                                                    <a href="{% url 'products:list' %}">Nulla
                                                                                         et justo non augue</a>
                                                                                 </div>
                                                                                 <div class="product-group-price">
@@ -1674,7 +1674,7 @@
                                                                     </div>
                                                                     <div class="product-miniature js-product-miniature item-one first-item">
                                                                         <div class="thumbnail-container">
-                                                                            <a href="product-detail.html">
+                                                                            <a href="{% url 'products:list' %}">
                                                                                 <img class="img-fluid image-cover"
                                                                                      src="{% static 'img/product/' %}23.jpg"
                                                                                      alt="img">
@@ -1696,7 +1696,7 @@
                                                                         <div class="product-description">
                                                                             <div class="product-groups">
                                                                                 <div class="product-title">
-                                                                                    <a href="product-detail.html">Nulla
+                                                                                    <a href="{% url 'products:list' %}">Nulla
                                                                                         et justo non augue</a>
                                                                                 </div>
                                                                                 <div class="product-group-price">
@@ -1760,40 +1760,40 @@
                                                     <div class="cate-child-vertical">
                                                         <ul class="d-flex align-items-start flex-column">
                                                             <li>
-                                                                <a href="products-list.html">Kitchen Shears</a>
+                                                                <a href="{% url 'products:list' %}">Kitchen Shears</a>
                                                             </li>
                                                             <li>
-                                                                <a href="products-list.html">Colander</a>
+                                                                <a href="{% url 'products:list' %}">Colander</a>
                                                             </li>
                                                             <li>
-                                                                <a href="products-list.html">Mixing Bowls</a>
+                                                                <a href="{% url 'products:list' %}">Mixing Bowls</a>
                                                             </li>
                                                             <li>
-                                                                <a href="products-list.html">Grater</a>
+                                                                <a href="{% url 'products:list' %}">Grater</a>
                                                             </li>
                                                             <li>
-                                                                <a href="products-list.html">Vegetable Peeler</a>
+                                                                <a href="{% url 'products:list' %}">Vegetable Peeler</a>
                                                             </li>
                                                             <li>
-                                                                <a href="products-list.html">Rolling Pin</a>
+                                                                <a href="{% url 'products:list' %}">Rolling Pin</a>
                                                             </li>
                                                             <li>
-                                                                <a href="products-list.html">Baking Sheet</a>
+                                                                <a href="{% url 'products:list' %}">Baking Sheet</a>
                                                             </li>
                                                             <li>
-                                                                <a href="products-list.html">Oven Mitts</a>
+                                                                <a href="{% url 'products:list' %}">Oven Mitts</a>
                                                             </li>
                                                             <li>
-                                                                <a href="products-list.html">Dutch Oven</a>
+                                                                <a href="{% url 'products:list' %}">Dutch Oven</a>
                                                             </li>
                                                             <li>
-                                                                <a href="products-list.html">Salad Bowl</a>
+                                                                <a href="{% url 'products:list' %}">Salad Bowl</a>
                                                             </li>
                                                             <li>
-                                                                <a href="products-list.html">WINDOW</a>
+                                                                <a href="{% url 'products:list' %}">WINDOW</a>
                                                             </li>
                                                             <li class="last float-right">
-                                                                <a href="products-list.html">View All</a>
+                                                                <a href="{% url 'products:list' %}">View All</a>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -1824,7 +1824,7 @@
                                                                 <div class="item text-center">
                                                                     <div class="product-miniature js-product-miniature item-one first-item">
                                                                         <div class="thumbnail-container">
-                                                                            <a href="product-detail.html">
+                                                                            <a href="{% url 'products:list' %}">
                                                                                 <img class="img-fluid image-cover"
                                                                                      src="{% static 'img/product/' %}6.jpg"
                                                                                      alt="img">
@@ -1848,7 +1848,7 @@
                                                                         <div class="product-description">
                                                                             <div class="product-groups">
                                                                                 <div class="product-title">
-                                                                                    <a href="product-detail.html">Nulla
+                                                                                    <a href="{% url 'products:list' %}">Nulla
                                                                                         et justo non augue</a>
                                                                                 </div>
                                                                                 <div class="rating">
@@ -1898,7 +1898,7 @@
                                                                 <div class="item text-center">
                                                                     <div class="product-miniature js-product-miniature item-one first-item">
                                                                         <div class="thumbnail-container">
-                                                                            <a href="product-detail.html">
+                                                                            <a href="{% url 'products:list' %}">
                                                                                 <img class="img-fluid image-cover"
                                                                                      src="{% static 'img/product/' %}10.jpg"
                                                                                      alt="img">
@@ -1922,7 +1922,7 @@
                                                                         <div class="product-description">
                                                                             <div class="product-groups">
                                                                                 <div class="product-title">
-                                                                                    <a href="product-detail.html">Nulla
+                                                                                    <a href="{% url 'products:list' %}">Nulla
                                                                                         et justo non augue</a>
                                                                                 </div>
                                                                                 <div class="rating">
@@ -1973,7 +1973,7 @@
                                                                 <div class="item text-center">
                                                                     <div class="product-miniature js-product-miniature item-one first-item">
                                                                         <div class="thumbnail-container">
-                                                                            <a href="product-detail.html">
+                                                                            <a href="{% url 'products:list' %}">
                                                                                 <img class="img-fluid image-cover"
                                                                                      src="{% static 'img/product/' %}16.jpg"
                                                                                      alt="img">
@@ -1995,7 +1995,7 @@
                                                                         <div class="product-description">
                                                                             <div class="product-groups">
                                                                                 <div class="product-title">
-                                                                                    <a href="product-detail.html">Nulla
+                                                                                    <a href="{% url 'products:list' %}">Nulla
                                                                                         et justo non augue</a>
                                                                                 </div>
                                                                                 <div class="rating">
@@ -2049,7 +2049,7 @@
                                                                 <div class="item text-center">
                                                                     <div class="product-miniature js-product-miniature item-one first-item">
                                                                         <div class="thumbnail-container">
-                                                                            <a href="product-detail.html">
+                                                                            <a href="{% url 'products:list' %}">
                                                                                 <img class="img-fluid image-cover"
                                                                                      src="{% static 'img/product/' %}8.jpg"
                                                                                      alt="img">
@@ -2073,7 +2073,7 @@
                                                                         <div class="product-description">
                                                                             <div class="product-groups">
                                                                                 <div class="product-title">
-                                                                                    <a href="product-detail.html">Nulla
+                                                                                    <a href="{% url 'products:list' %}">Nulla
                                                                                         et justo non augue</a>
                                                                                 </div>
                                                                                 <div class="rating">
@@ -2123,7 +2123,7 @@
                                                                 <div class="item text-center">
                                                                     <div class="product-miniature js-product-miniature item-one first-item">
                                                                         <div class="thumbnail-container">
-                                                                            <a href="product-detail.html">
+                                                                            <a href="{% url 'products:list' %}">
                                                                                 <img class="img-fluid image-cover"
                                                                                      src="{% static 'img/product/' %}4.jpg"
                                                                                      alt="img">
@@ -2147,7 +2147,7 @@
                                                                         <div class="product-description">
                                                                             <div class="product-groups">
                                                                                 <div class="product-title">
-                                                                                    <a href="product-detail.html">Nulla
+                                                                                    <a href="{% url 'products:list' %}">Nulla
                                                                                         et justo non augue</a>
                                                                                 </div>
                                                                                 <div class="rating">
@@ -2197,7 +2197,7 @@
                                                                 <div class="item text-center">
                                                                     <div class="product-miniature js-product-miniature item-one first-item">
                                                                         <div class="thumbnail-container">
-                                                                            <a href="product-detail.html">
+                                                                            <a href="{% url 'products:list' %}">
                                                                                 <img class="img-fluid image-cover"
                                                                                      src="{% static 'img/product/' %}13.jpg"
                                                                                      alt="img">
@@ -2219,7 +2219,7 @@
                                                                         <div class="product-description">
                                                                             <div class="product-groups">
                                                                                 <div class="product-title">
-                                                                                    <a href="product-detail.html">Nulla
+                                                                                    <a href="{% url 'products:list' %}">Nulla
                                                                                         et justo non augue</a>
                                                                                 </div>
                                                                                 <div class="rating">
@@ -2272,7 +2272,7 @@
                                                                 <div class="item text-center">
                                                                     <div class="product-miniature js-product-miniature item-one first-item">
                                                                         <div class="thumbnail-container">
-                                                                            <a href="product-detail.html">
+                                                                            <a href="{% url 'products:list' %}">
                                                                                 <img class="img-fluid image-cover"
                                                                                      src="{% static 'img/product/' %}10.jpg"
                                                                                      alt="img">
@@ -2296,7 +2296,7 @@
                                                                         <div class="product-description">
                                                                             <div class="product-groups">
                                                                                 <div class="product-title">
-                                                                                    <a href="product-detail.html">Nulla
+                                                                                    <a href="{% url 'products:list' %}">Nulla
                                                                                         et justo non augue</a>
                                                                                 </div>
                                                                                 <div class="rating">
@@ -2346,7 +2346,7 @@
                                                                 <div class="item text-center">
                                                                     <div class="product-miniature js-product-miniature item-one first-item">
                                                                         <div class="thumbnail-container">
-                                                                            <a href="product-detail.html">
+                                                                            <a href="{% url 'products:list' %}">
                                                                                 <img class="img-fluid image-cover"
                                                                                      src="{% static 'img/product/' %}11.jpg"
                                                                                      alt="img">
@@ -2370,7 +2370,7 @@
                                                                         <div class="product-description">
                                                                             <div class="product-groups">
                                                                                 <div class="product-title">
-                                                                                    <a href="product-detail.html">Nulla
+                                                                                    <a href="{% url 'products:list' %}">Nulla
                                                                                         et justo non augue</a>
                                                                                 </div>
                                                                                 <div class="rating">
@@ -2420,7 +2420,7 @@
                                                                 <div class="item text-center">
                                                                     <div class="product-miniature js-product-miniature item-one first-item">
                                                                         <div class="thumbnail-container">
-                                                                            <a href="product-detail.html">
+                                                                            <a href="{% url 'products:list' %}">
                                                                                 <img class="img-fluid image-cover"
                                                                                      src="{% static 'img/product/' %}6.jpg"
                                                                                      alt="img">
@@ -2444,7 +2444,7 @@
                                                                         <div class="product-description">
                                                                             <div class="product-groups">
                                                                                 <div class="product-title">
-                                                                                    <a href="product-detail.html">Nulla
+                                                                                    <a href="{% url 'products:list' %}">Nulla
                                                                                         et justo non augue</a>
                                                                                 </div>
                                                                                 <div class="rating">
@@ -2646,21 +2646,21 @@
                                         <div class="items col-lg-12 col-sm-12 col-xs-12">
                                             <div class="tiva-content-lookbook">
                                                 <img class="img-fluid img-responsive"
-                                                     src="{% static 'img/home/home' %}1-tolltip1.jpg" alt="lookbook">
+                                                     src="{% static 'img/home/home1-tolltip1.jpg' %}" alt="lookbook">
 
                                                 <div class="item-lookbook item1">
                                                     <span class="number-lookbook">+</span>
                                                     <div class="content-lookbook">
                                                         <div class="main-lookbook d-flex align-items-center">
                                                             <div class="item-thumb">
-                                                                <a href="product-detail.html">
+                                                                <a href="{% url 'products:list' %}">
                                                                     <img src="{% static 'img/home/icon-tolltip' %}2.jpg"
                                                                          alt="lorem-ipsum-dolor-sit-amet">
                                                                 </a>
                                                             </div>
                                                             <div class="content-bottom">
                                                                 <div class="item-title">
-                                                                    <a href="product-detail.html">Lorem ipsum dolor</a>
+                                                                    <a href="{% url 'products:list' %}">Lorem ipsum dolor</a>
                                                                 </div>
                                                                 <div class="rating">
                                                                     <div class="star-content">
@@ -2675,7 +2675,7 @@
                                                                     £52.00
                                                                 </div>
                                                                 <div class="readmore">
-                                                                    <a href="product-detail.html">View More</a>
+                                                                    <a href="{% url 'products:list' %}">View More</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2687,14 +2687,14 @@
                                                     <div class="content-lookbook">
                                                         <div class="main-lookbook  d-flex align-items-center">
                                                             <div class="item-thumb">
-                                                                <a href="product-detail.html">
+                                                                <a href="{% url 'products:list' %}">
                                                                     <img src="{% static 'img/home/icon-tolltip' %}1.jpg"
                                                                          alt="contrary-to-popular-belief">
                                                                 </a>
                                                             </div>
                                                             <div class="content-bottom">
                                                                 <div class="item-title">
-                                                                    <a href="product-detail.html">Sed vel malesuada
+                                                                    <a href="{% url 'products:list' %}">Sed vel malesuada
                                                                         lorem</a>
                                                                 </div>
                                                                 <div class="rating">
@@ -2710,7 +2710,7 @@
                                                                     £68.00
                                                                 </div>
                                                                 <div class="readmore">
-                                                                    <a href="product-detail.html">View More</a>
+                                                                    <a href="{% url 'products:list' %}">View More</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2727,21 +2727,21 @@
                                         <div class="items col-lg-12 col-sm-12 col-xs-12">
                                             <div class="tiva-content-lookbook">
                                                 <img class="img-fluid img-responsive"
-                                                     src="{% static 'img/home/home' %}1-tolltip2.jpg" alt="lookbook">
+                                                     src="{% static 'img/home/home1-tolltip2.jpg' %}" alt="lookbook">
 
                                                 <div class="item-lookbook item3">
                                                     <span class="number-lookbook">+</span>
                                                     <div class="content-lookbook">
                                                         <div class="main-lookbook  d-flex align-items-center">
                                                             <div class="item-thumb">
-                                                                <a href="product-detail.html">
+                                                                <a href="{% url 'products:list' %}">
                                                                     <img src="{% static 'img/product/' %}34.jpg"
                                                                          alt="lorem-ipsum-dolor-sit-amet">
                                                                 </a>
                                                             </div>
                                                             <div class="content-bottom">
                                                                 <div class="item-title">
-                                                                    <a href="product-detail.html">Lorem ipsum dolor
+                                                                    <a href="{% url 'products:list' %}">Lorem ipsum dolor
                                                                         sit</a>
                                                                 </div>
                                                                 <div class="rating">
@@ -2757,7 +2757,7 @@
                                                                     £45.00
                                                                 </div>
                                                                 <div class="readmore">
-                                                                    <a href="product-detail.html">View More</a>
+                                                                    <a href="{% url 'products:list' %}">View More</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2769,14 +2769,14 @@
                                                     <div class="content-lookbook">
                                                         <div class="main-lookbook  d-flex align-items-center">
                                                             <div class="item-thumb">
-                                                                <a href="product-detail.html">
+                                                                <a href="{% url 'products:list' %}">
                                                                     <img src="{% static 'img/home/icon-tolltip' %}6.jpg"
                                                                          alt="lorem-ipsum-dolor-sit-amet">
                                                                 </a>
                                                             </div>
                                                             <div class="content-bottom">
                                                                 <div class="item-title">
-                                                                    <a href="product-detail.html">Lorem ipsum dolor</a>
+                                                                    <a href="{% url 'products:list' %}">Lorem ipsum dolor</a>
                                                                 </div>
                                                                 <div class="rating">
                                                                     <div class="star-content">
@@ -2791,7 +2791,7 @@
                                                                     £21.00
                                                                 </div>
                                                                 <div class="readmore">
-                                                                    <a href="product-detail.html">View More</a>
+                                                                    <a href="{% url 'products:list' %}">View More</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2803,14 +2803,14 @@
                                                     <div class="content-lookbook">
                                                         <div class="main-lookbook  d-flex align-items-center">
                                                             <div class="item-thumb">
-                                                                <a href="product-detail.html">
+                                                                <a href="{% url 'products:list' %}">
                                                                     <img src="{% static 'img/home/icon-tolltip' %}4.jpg"
                                                                          alt="mug-the-adventure-begins">
                                                                 </a>
                                                             </div>
                                                             <div class="content-bottom">
                                                                 <div class="item-title">
-                                                                    <a href="product-detail.html">Sed vel malesuada
+                                                                    <a href="{% url 'products:list' %}">Sed vel malesuada
                                                                         lorem</a>
                                                                 </div>
                                                                 <div class="rating">
@@ -2826,7 +2826,7 @@
                                                                     £11.90
                                                                 </div>
                                                                 <div class="readmore">
-                                                                    <a href="product-detail.html">View More</a>
+                                                                    <a href="{% url 'products:list' %}">View More</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2845,21 +2845,21 @@
                                         <div class="items col-lg-12 col-sm-12 col-xs-12">
                                             <div class="tiva-content-lookbook">
                                                 <img class="img-fluid img-responsive"
-                                                     src="{% static 'img/home/home' %}1-tolltip3.jpg" alt="lookbook">
+                                                     src="{% static 'img/home/home1-tolltip3.jpg' %}" alt="lookbook">
 
                                                 <div class="item-lookbook item6">
                                                     <span class="number-lookbook">+</span>
                                                     <div class="content-lookbook">
                                                         <div class="main-lookbook  d-flex align-items-center">
                                                             <div class="item-thumb">
-                                                                <a href="product-detail.html">
+                                                                <a href="{% url 'products:list' %}">
                                                                     <img src="{% static 'img/home/icon-tolltip' %}4.jpg"
                                                                          alt="mug-the-adventure-begins">
                                                                 </a>
                                                             </div>
                                                             <div class="content-bottom">
                                                                 <div class="item-title">
-                                                                    <a href="product-detail.html">Sed vel malesuada
+                                                                    <a href="{% url 'products:list' %}">Sed vel malesuada
                                                                         lorem</a>
                                                                 </div>
                                                                 <div class="rating">
@@ -2875,7 +2875,7 @@
                                                                     £11.90
                                                                 </div>
                                                                 <div class="readmore">
-                                                                    <a href="product-detail.html">View More</a>
+                                                                    <a href="{% url 'products:list' %}">View More</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2887,14 +2887,14 @@
                                                     <div class="content-lookbook">
                                                         <div class="main-lookbook  d-flex align-items-center">
                                                             <div class="item-thumb">
-                                                                <a href="product-detail.html">
+                                                                <a href="{% url 'products:list' %}">
                                                                     <img src="{% static 'img/product/' %}13.jpg"
                                                                          alt="brown-bear-vector-graphics">
                                                                 </a>
                                                             </div>
                                                             <div class="content-bottom">
                                                                 <div class="item-title">
-                                                                    <a href="product-detail.html">Orci varius natoque
+                                                                    <a href="{% url 'products:list' %}">Orci varius natoque
                                                                         penatibus</a>
                                                                 </div>
                                                                 <div class="rating">
@@ -2910,7 +2910,7 @@
                                                                     £9.00
                                                                 </div>
                                                                 <div class="readmore">
-                                                                    <a href="product-detail.html">View More</a>
+                                                                    <a href="{% url 'products:list' %}">View More</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2922,14 +2922,14 @@
                                                     <div class="content-lookbook">
                                                         <div class="main-lookbook  d-flex align-items-center">
                                                             <div class="item-thumb">
-                                                                <a href="product-detail.html">
+                                                                <a href="{% url 'products:list' %}">
                                                                     <img src="{% static 'img/home/icon-tolltip' %}6.jpg"
                                                                          alt="lorem-ipsum-dolor-sit-amet">
                                                                 </a>
                                                             </div>
                                                             <div class="content-bottom">
                                                                 <div class="item-title">
-                                                                    <a href="product-detail.html">Etiam congue nisl
+                                                                    <a href="{% url 'products:list' %}">Etiam congue nisl
                                                                         nec</a>
                                                                 </div>
                                                                 <div class="rating">
@@ -2945,7 +2945,7 @@
                                                                     £16.00
                                                                 </div>
                                                                 <div class="readmore">
-                                                                    <a href="product-detail.html">View More</a>
+                                                                    <a href="{% url 'products:list' %}">View More</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2965,21 +2965,21 @@
                                         <div class="items col-lg-12 col-sm-12 col-xs-12">
                                             <div class="tiva-content-lookbook">
                                                 <img class="img-fluid img-responsive"
-                                                     src="{% static 'img/home/home' %}1-tolltip4.jpg" alt="lookbook">
+                                                     src="{% static 'img/home/home1-tolltip4.jpg' %}" alt="lookbook">
 
                                                 <div class="item-lookbook item9">
                                                     <span class="number-lookbook">+</span>
                                                     <div class="content-lookbook">
                                                         <div class="main-lookbook  d-flex align-items-center">
                                                             <div class="item-thumb">
-                                                                <a href="product-detail.html">
+                                                                <a href="{% url 'products:list' %}">
                                                                     <img src="{% static 'img/home/icon-tolltip' %}10.jpg"
                                                                          alt="lorem-ipsum-dolor-sit-amet">
                                                                 </a>
                                                             </div>
                                                             <div class="content-bottom">
                                                                 <div class="item-title">
-                                                                    <a href="product-detail.html">Nam semper a ligula
+                                                                    <a href="{% url 'products:list' %}">Nam semper a ligula
                                                                         nec</a>
                                                                 </div>
                                                                 <div class="rating">
@@ -2995,7 +2995,7 @@
                                                                     £41.00
                                                                 </div>
                                                                 <div class="readmore">
-                                                                    <a href="product-detail.html">View More</a>
+                                                                    <a href="{% url 'products:list' %}">View More</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -3007,14 +3007,14 @@
                                                     <div class="content-lookbook">
                                                         <div class="main-lookbook  d-flex align-items-center">
                                                             <div class="item-thumb">
-                                                                <a href="product-detail.html">
+                                                                <a href="{% url 'products:list' %}">
                                                                     <img src="{% static 'img/home/icon-tolltip' %}8.jpg"
                                                                          alt="lorem-ipsum-dolor-sit-amet">
                                                                 </a>
                                                             </div>
                                                             <div class="content-bottom">
                                                                 <div class="item-title">
-                                                                    <a href="product-detail.html">Donec accumsan lectus
+                                                                    <a href="{% url 'products:list' %}">Donec accumsan lectus
                                                                         ut</a>
                                                                 </div>
                                                                 <div class="rating">
@@ -3030,7 +3030,7 @@
                                                                     £11.00
                                                                 </div>
                                                                 <div class="readmore">
-                                                                    <a href="product-detail.html">View More</a>
+                                                                    <a href="{% url 'products:list' %}">View More</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -3042,14 +3042,14 @@
                                                     <div class="content-lookbook">
                                                         <div class="main-lookbook  d-flex align-items-center">
                                                             <div class="item-thumb">
-                                                                <a href="product-detail.html">
+                                                                <a href="{% url 'products:list' %}">
                                                                     <img src="{% static 'img/home/icon-tolltip9.jpg' %}"
                                                                          alt="lorem-ipsum-dolor-sit-amet">
                                                                 </a>
                                                             </div>
                                                             <div class="content-bottom">
                                                                 <div class="item-title">
-                                                                    <a href="product-detail.html">Fusce quis felis
+                                                                    <a href="{% url 'products:list' %}">Fusce quis felis
                                                                         libero</a>
                                                                 </div>
                                                                 <div class="rating">
@@ -3065,7 +3065,7 @@
                                                                     £11.00
                                                                 </div>
                                                                 <div class="readmore">
-                                                                    <a href="product-detail.html">View More</a>
+                                                                    <a href="{% url 'products:list' %}">View More</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -3089,8 +3089,8 @@
                                     <div class="col-md-4">
                                         <div class="item-post">
                                             <div class="thumbnail-img">
-                                                <a href="blog-detail.html">
-                                                    <img src="{% static 'img/home/home' %}1-post1.jpg" alt="img">
+                                                <a href="{% url 'blogs:list' %}">
+                                                    <img src="{% static 'img/home/home1-post1.jpg' %}" alt="img">
                                                 </a>
                                             </div>
                                             <div class="post-content">
@@ -3105,7 +3105,7 @@
                                                     </span>
                                                 </div>
                                                 <div class="post-title">
-                                                    <a href="blog-detail.html">Lorem ipsum dolor sit amet</a>
+                                                    <a href="{% url 'blogs:list' %}">Lorem ipsum dolor sit amet</a>
                                                 </div>
                                                 <div class="post-desc">
                                                     Lorem ipsum dolor sit amet, consecte adipis cing elit, sed do
@@ -3117,8 +3117,8 @@
                                     <div class="col-md-4">
                                         <div class="item-post">
                                             <div class="thumbnail-img">
-                                                <a href="blog-detail.html">
-                                                    <img src="{% static 'img/home/home' %}1-post2.jpg" alt="img">
+                                                <a href="{% url 'blogs:list' %}">
+                                                    <img src="{% static 'img/home/home1-post2.jpg' %}" alt="img">
                                                 </a>
                                             </div>
                                             <div class="post-content">
@@ -3133,7 +3133,7 @@
                                                     </span>
                                                 </div>
                                                 <div class="post-title">
-                                                    <a href="blog-detail.html">Lorem ipsum dolor sit amet</a>
+                                                    <a href="{% url 'blogs:list' %}">Lorem ipsum dolor sit amet</a>
                                                 </div>
                                                 <div class="post-desc">
                                                     Lorem ipsum dolor sit amet, consecte adipis cing elit, sed do
@@ -3145,8 +3145,8 @@
                                     <div class="col-md-4">
                                         <div class="item-post">
                                             <div class="thumbnail-img">
-                                                <a href="blog-detail.html">
-                                                    <img src="{% static 'img/home/home' %}1-post3.jpg" alt="img">
+                                                <a href="{% url 'blogs:list' %}">
+                                                    <img src="{% static 'img/home/home1-post3.jpg' %}" alt="img">
                                                 </a>
                                             </div>
                                             <div class="post-content">
@@ -3161,7 +3161,7 @@
                                                     </span>
                                                 </div>
                                                 <div class="post-title">
-                                                    <a href="blog-detail.html">Lorem ipsum dolor sit amet</a>
+                                                    <a href="{% url 'blogs:list' %}">Lorem ipsum dolor sit amet</a>
                                                 </div>
                                                 <div class="post-desc">
                                                     Lorem ipsum dolor sit amet, consecte adipis cing elit, sed do
