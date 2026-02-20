@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
@@ -25,18 +26,18 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="libs/nivo-slider/css/nivo-slider.css">
-    <link rel="stylesheet" href="libs/nivo-slider/css/animate.css">
-    <link rel="stylesheet" href="libs/nivo-slider/css/style.css">
-    <link rel="stylesheet" href="libs/font-material/css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="libs/slider-range/css/jslider.css">
-    <link rel="stylesheet" href="libs/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="{% static 'libs/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'libs/font-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'libs/nivo-slider/css/nivo-slider.css' %}">
+    <link rel="stylesheet" href="{% static 'libs/nivo-slider/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'libs/nivo-slider/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'libs/font-material/css/material-design-iconic-font.min.css' %}">
+    <link rel="stylesheet" href="{% static 'libs/slider-range/css/jslider.css' %}">
+    <link rel="stylesheet" href="{% static 'libs/owl-carousel/assets/owl.carousel.min.css' %}">
 
     <!-- Template CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/reponsive.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reponsive.css' %}">
 </head>
 
 <body id="blog-detail" class="blog">
@@ -54,7 +55,7 @@
                 <!-- logo -->
                 <div class="mobile-logo">
                     <a href="home.html">
-                        <img class="logo-mobile img-fluid" src="img/home/logo-mobie.png" alt="Prestashop_Furnitica">
+                        <img class="logo-mobile img-fluid" src="{% static 'img/home/logo-mobie.png' %}" alt="Prestashop_Furnitica">
                     </a>
                 </div>
 
@@ -88,7 +89,7 @@
                                         <tr>
                                             <td class="product-image">
                                                 <a href="product-detail.html">
-                                                    <img src="img/product/5.jpg" alt="Product">
+                                                    <img src="{% static 'img/product/5.jpg' %}" alt="Product">
                                                 </a>
                                             </td>
                                             <td>
@@ -136,7 +137,7 @@
                     <div class="col-sm-2 col-md-2 d-flex align-items-center">
                         <div id="logo">
                             <a href="home.html">
-                                <img src="img/home/logo.png" alt="logo" class="img-fluid">
+                                <img src="{% static 'img/home/logo.png' %}" alt="logo" class="img-fluid">
                             </a>
                         </div>
                     </div>
@@ -323,22 +324,22 @@
                                         <ul class="list-inline">
                                             <li class="list-inline-itemcurrent">
                                                 <a href="#">
-                                                    <img class="img-fluid" src="img/home/home1-flas.jpg" alt="English" width="16" height="11">
+                                                    <img class="img-fluid" src="{% static 'img/home/home1-flas.jpg' %}" alt="English" width="16" height="11">
                                                 </a>
                                             </li>
                                             <li class="list-inline-item">
                                                 <a href="#">
-                                                    <img class="img-fluid" src="img/home/home1-flas2.jpg" alt="Italiano" width="16" height="11">
+                                                    <img class="img-fluid" src="{% static 'img/home/home1-flas2.jpg' %}" alt="Italiano" width="16" height="11">
                                                 </a>
                                             </li>
                                             <li class="list-inline-item">
                                                 <a href="#">
-                                                    <img class="img-fluid" src="img/home/home1-flas3.jpg" alt="Français" width="16" height="11">
+                                                    <img class="img-fluid" src="{% static 'img/home/home1-flas3.jpg' %}" alt="Français" width="16" height="11">
                                                 </a>
                                             </li>
                                             <li class="list-inline-item">
                                                 <a href="#">
-                                                    <img class="img-fluid" src="img/home/home1-flas4.jpg" alt="Español" width="16" height="11">
+                                                    <img class="img-fluid" src="{% static 'img/home/home1-flas4.jpg' %}" alt="Español" width="16" height="11">
                                                 </a>
                                             </li>
                                         </ul>
@@ -359,7 +360,7 @@
                                                 <tr>
                                                     <td class="product-image">
                                                         <a href="product-detail.html">
-                                                            <img src="img/product/5.jpg" alt="Product">
+                                                            <img src="{% static 'img/product/5.jpg' %}" alt="Product">
                                                         </a>
                                                     </td>
                                                     <td>
@@ -682,7 +683,7 @@
                                         <div class="sidebar-block group-image-special">
                                             <div class="effect">
                                                 <a href="#">
-                                                    <img class="img-fluid" src="img/blog/advertising.jpg" alt="banner-2" title="banner-2">
+                                                    <img class="img-fluid" src="{% static 'img/blog/advertising.jpg' %}" alt="banner-2" title="banner-2">
                                                 </a>
                                             </div>
                                         </div>
@@ -690,7 +691,7 @@
                                     <div class="col-sm-8 col-lg-9 col-md-9 flex-xs-first main-blogs">
                                         <h3>Rutrum Nonvopxe Sapiente Delectus Aut Bonbde</h3>
                                         <div class="hover-after">
-                                            <img src="img/blog/detail.jpg" alt="img" class="img-fluid">
+                                            <img src="{% static 'img/blog/detail.jpg' %}" alt="img" class="img-fluid">
                                         </div>
                                         <div class="late-item">
                                             <p>
@@ -718,12 +719,12 @@
                                                     <div class="row">
                                                         <div class="col-lg-6 col-md-6 p-left">
                                                             <div class="effect">
-                                                                <img class="img-fluid" src="img/blog/3.jpg" alt="banner-1" title="banner-1">
+                                                                <img class="img-fluid" src="{% static 'img/blog/3.jpg' %}" alt="banner-1" title="banner-1">
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-6 col-md-6 p-right">
                                                             <div class="effect">
-                                                                <img class="img-fluid" src="img/blog/2.jpg" alt="banner-2" title="banner-2">
+                                                                <img class="img-fluid" src="{% static 'img/blog/2.jpg' %}" alt="banner-2" title="banner-2">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -764,7 +765,7 @@
                                         </div>
 
                                         <div class="admin">
-                                            <img src="img/blog/user.jpg" alt="img" class="float-left right">
+                                            <img src="{% static 'img/blog/user.jpg' %}" alt="img" class="float-left right">
                                             <div class="info">
                                                 <p>
                                                     <a href="#">
@@ -786,7 +787,7 @@
                                                     <div class="col-md-4">
                                                         <div class="hover-after">
                                                             <a href="blog-detail.html">
-                                                                <img src="img/blog/7.jpg" alt="img" class="img-fluid">
+                                                                <img src="{% static 'img/blog/7.jpg' %}" alt="img" class="img-fluid">
                                                             </a>
                                                         </div>
                                                         <div class="late-item">
@@ -801,7 +802,7 @@
                                                     <div class="col-md-4">
                                                         <div class="hover-after">
                                                             <a href="blog-detail.html">
-                                                                <img src="img/blog/8.jpg" alt="img" class="img-fluid">
+                                                                <img src="{% static 'img/blog/8.jpg' %}" alt="img" class="img-fluid">
                                                             </a>
                                                         </div>
                                                         <div class="late-item">
@@ -816,7 +817,7 @@
                                                     <div class="col-md-4">
                                                         <div class="hover-after">
                                                             <a href="blog-detail.html">
-                                                                <img src="img/blog/9.jpg" alt="img" class="img-fluid">
+                                                                <img src="{% static 'img/blog/9.jpg' %}" alt="img" class="img-fluid">
                                                             </a>
                                                         </div>
                                                         <div class="late-item">
@@ -834,7 +835,7 @@
                                         <div class="reply late-item">
                                             <div class="blog-comment" id="blog-comment">
                                                 <h2 class="title-block">Comments</h2>
-                                                <img src="img/blog/user1.jpg" alt="img" class="float-left right">
+                                                <img src="{% static 'img/blog/user1.jpg' %}" alt="img" class="float-left right">
                                             </div>
                                             <div class="comment-content">
                                                 <p class="user-title">
@@ -852,7 +853,7 @@
                                             </div>
                                             <div class="blog-comment margin-right-comment">
                                                 <div class="avatar">
-                                                    <img src="img/blog/user2.jpg" alt="img" class="float-left">
+                                                    <img src="{% static 'img/blog/user2.jpg' %}" alt="img" class="float-left">
                                                 </div>
                                                 <div class="comment-content">
                                                     <p class="user-title">
@@ -872,7 +873,7 @@
                                             </div>
                                             <div class="blog-comment">
                                                 <div class="avatar">
-                                                    <img src="img/blog/user1.jpg" alt="img" class="float-left right">
+                                                    <img src="{% static 'img/blog/user1.jpg' %}" alt="img" class="float-left right">
                                                 </div>
                                                 <div class="comment-content">
                                                     <p class="user-title">
@@ -938,7 +939,7 @@
                             <div class="block">
                                 <div class="block-content">
                                     <p class="logo-footer">
-                                        <img src="img/home/logo.png" alt="img">
+                                        <img src="{% static 'img/home/logo.png' %}" alt="img">
                                     </p>
                                     <p class="content-logo">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt
                                         ut labore et dolore magna aliqua. Ut enim ad minim
@@ -969,7 +970,7 @@
                             <div class="block">
                                 <div class="block-content">
                                     <p class="img-payment ">
-                                        <img class="img-fluid" src="img/home/payment-footer.png" alt="img">
+                                        <img class="img-fluid" src="{% static 'img/home/payment-footer.png' %}" alt="img">
                                     </p>
                                 </div>
                             </div>
@@ -1085,7 +1086,7 @@
                                             Payment accept
                                         </div>
                                         <div class="payment-image">
-                                            <img class="img-fluid" src="img/home/payment.png" alt="img">
+                                            <img class="img-fluid" src="{% static 'img/home/payment.png' %}" alt="img">
                                         </div>
                                     </div>
                                     <!-- Popup newsletter -->
@@ -1127,7 +1128,7 @@
                     <ul class="menu level1">
                         <li class="item  parent">
                             <a href="#" class="hasicon" title="SIDE TABLE">
-                                <img src="img/home/table-lamp.png" alt="img">SIDE TABLE</a>
+                                <img src="{% static 'img/home/table-lamp.png' %}" alt="img">SIDE TABLE</a>
                             <span class="arrow collapsed" data-toggle="collapse" data-target="#SIDE-TABLE" aria-expanded="false" role="status">
                                 <i class="zmdi zmdi-minus"></i>
                                 <i class="zmdi zmdi-plus"></i>
@@ -1177,7 +1178,7 @@
                         </li>
                         <li class="item  parent group">
                             <a href="#" class="hasicon" title="FI">
-                                <img src="img/home/fireplace.png" alt="img">FIREPLACE
+                                <img src="{% static 'img/home/fireplace.png' %}" alt="img">FIREPLACE
                             </a>
                             <span class="arrow collapsed" data-toggle="collapse" data-target="#fi" aria-expanded="false" role="status">
                                 <i class="zmdi zmdi-minus"></i>
@@ -1429,7 +1430,7 @@
                         </li>
                         <li class="item group-category-img parent group">
                             <a href="#" class="hasicon" title="TABLE LAMP">
-                                <img src="img/home/table-lamp.png" alt="img">TABLE LAMP</a>
+                                <img src="{% static 'img/home/table-lamp.png' %}" alt="img">TABLE LAMP</a>
                             <span class="arrow collapsed" data-toggle="collapse" data-target="#table-lamp" aria-expanded="false" role="status">
                                 <i class="zmdi zmdi-minus"></i>
                                 <i class="zmdi zmdi-plus"></i>
@@ -1547,76 +1548,76 @@
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="OTTOMAN">
-                                <img src="img/home/ottoman.png" alt="img">OTTOMAN
+                                <img src="{% static 'img/home/ottoman.png' %}" alt="img">OTTOMAN
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="ARMCHAIR">
-                                <img src="img/home/armchair.png" alt="img">ARMCHAIR
+                                <img src="{% static 'img/home/armchair.png' %}" alt="img">ARMCHAIR
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="CUSHION">
-                                <img src="img/home/cushion.png" alt="img">CUSHION
+                                <img src="{% static 'img/home/cushion.png' %}" alt="img">CUSHION
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="COFFEE TABLE">
-                                <img src="img/home/coffee_table.png" alt="img">COFFEE TABLE</a>
+                                <img src="{% static 'img/home/coffee_table.png' %}" alt="img">COFFEE TABLE</a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="SHELF">
-                                <img src="img/home/shelf.png" alt="img">SHELF
+                                <img src="{% static 'img/home/shelf.png' %}" alt="img">SHELF
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="SOFA">
-                                <img src="img/home/sofa.png" alt="img">SOFA
+                                <img src="{% static 'img/home/sofa.png' %}" alt="img">SOFA
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="DRESSING TABLE">
-                                <img src="img/home/dressing.png" alt="img">DRESSING TABLE</a>
+                                <img src="{% static 'img/home/dressing.png' %}" alt="img">DRESSING TABLE</a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="WINDOWN CURTAIN">
-                                <img src="img/home/windown.png" alt="img">WINDOWN CURTAIN</a>
+                                <img src="{% static 'img/home/windown.png' %}" alt="img">WINDOWN CURTAIN</a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="CHANDELIER">
-                                <img src="img/home/chandelier.png" alt="img">CHANDELIER
+                                <img src="{% static 'img/home/chandelier.png' %}" alt="img">CHANDELIER
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="CEILING FAN">
-                                <img src="img/home/ceiling_fan.png" alt="img">CEILING FAN</a>
+                                <img src="{% static 'img/home/ceiling_fan.png' %}" alt="img">CEILING FAN</a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="WARDROBE">
-                                <img src="img/home/wardrobe.png" alt="img">WARDROBE
+                                <img src="{% static 'img/home/wardrobe.png' %}" alt="img">WARDROBE
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="FLOOR LAMP">
-                                <img src="img/home/floor_lamp.png" alt="img">FLOOR LAMP</a>
+                                <img src="{% static 'img/home/floor_lamp.png' %}" alt="img">FLOOR LAMP</a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="VASE-FLOWER ">
-                                <img src="img/home/vase-flower.png" alt="img">VASE-FLOWER
+                                <img src="{% static 'img/home/vase-flower.png' %}" alt="img">VASE-FLOWER
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="BED">
-                                <img src="img/home/bed.png" alt="img">BED
+                                <img src="{% static 'img/home/bed.png' %}" alt="img">BED
                             </a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="BED GIRL">
-                                <img src="img/home/bed.png" alt="img">BED GIRL</a>
+                                <img src="{% static 'img/home/bed.png' %}" alt="img">BED GIRL</a>
                         </li>
                         <li class="item">
                             <a href="#" class="hasicon" title="BED BOY">
-                                <img src="img/home/bed.png" alt="img">BED BOY</a>
+                                <img src="{% static 'img/home/bed.png' %}" alt="img">BED BOY</a>
                         </li>
                     </ul>
                 </div>
@@ -1778,18 +1779,18 @@
     </div>
 
     <!-- Vendor JS -->
-    <script src="libs/jquery/jquery.min.js"></script>
-    <script src="libs/popper/popper.min.js"></script>
-    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
-    <script src="libs/nivo-slider/js/jquery.nivo.slider.js"></script>
-    <script src="libs/owl-carousel/owl.carousel.min.js"></script>
-    <script src="libs/slider-range/js/tmpl.js"></script>
-    <script src="libs/slider-range/js/jquery.dependClass-0.1.js"></script>
-    <script src="libs/slider-range/js/draggable-0.1.js"></script>
-    <script src="libs/slider-range/js/jquery.slider.js"></script>
+    <script src="{% static 'libs/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'libs/popper/popper.min.js' %}"></script>
+    <script src="{% static 'libs/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'libs/nivo-slider/js/jquery.nivo.slider.js' %}"></script>
+    <script src="{% static 'libs/owl-carousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'libs/slider-range/js/tmpl.js' %}"></script>
+    <script src="{% static 'libs/slider-range/js/jquery.dependClass-0.1.js' %}"></script>
+    <script src="{% static 'libs/slider-range/js/draggable-0.1.js' %}"></script>
+    <script src="{% static 'libs/slider-range/js/jquery.slider.js' %}"></script>
 
     <!-- Template JS -->
-    <script src="js/theme.js"></script>
+    <script src="{% static 'js/theme.js' %}"></script>
 </body>
 
 
