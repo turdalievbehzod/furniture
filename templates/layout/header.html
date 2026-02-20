@@ -11,8 +11,8 @@
 
                 <!-- logo -->
                 <div class="mobile-logo">
-                    <a href="home.html">
-                        <img class="logo-mobile img-fluid" src="img/home/logo-mobie.png" alt="Prestashop_Furnitica">
+                    <a href="{% url 'shared:home' %}">
+                        <img class="logo-mobile img-fluid" src="{% static 'img/home/logo-mobie.png' %}" alt="Prestashop_Furnitica">
                     </a>
                 </div>
 
@@ -45,13 +45,13 @@
                                     <tbody>
                                         <tr>
                                             <td class="product-image">
-                                                <a href="product-detail.html">
-                                                    <img src="img/product/5.jpg" alt="Product">
+                                                <a href="{% url 'products:list' %}">
+                                                    <img src="{% static 'img/product/5.jpg' %}" alt="Product">
                                                 </a>
                                             </td>
                                             <td>
                                                 <div class="product-name">
-                                                    <a href="product-detail.html">Organic Strawberry Fruits</a>
+                                                    <a href="{% url 'products:list' %}">Organic Strawberry Fruits</a>
                                                 </div>
                                                 <div>
                                                     2 x
@@ -72,8 +72,8 @@
                                         <tr>
                                             <td colspan="3" class="d-flex justify-content-center">
                                                 <div class="cart-button">
-                                                    <a href="cart.html" title="View Cart">View Cart</a>
-                                                    <a href="checkout.html" title="Checkout">Checkout</a>
+                                                    <a href="#" title="View Cart">View Cart</a>
+                                                    <a href="#" title="Checkout">Checkout</a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -93,8 +93,8 @@
                     <!-- logo -->
                     <div class="col-sm-2 col-md-2 d-flex align-items-center">
                         <div id="logo">
-                            <a href="home.html">
-                                <img src="img/home/logo.png" alt="logo" class="img-fluid">
+                            <a href="{% url 'shared:home' %}">
+                                <img src="{% static 'img/home/logo.png' %}" alt="logo" class="img-fluid">
                             </a>
                         </div>
                     </div>
@@ -108,7 +108,7 @@
                                     <div class="dropdown-menu">
                                         <ul>
                                             <li class="item">
-                                                <a href="home.html" title="Home Page 1">Home Page 1</a>
+                                                <a href="{% url 'shared:home' %}" title="Home Page 1">Home Page 1</a>
                                             </li>
                                             <li class="item">
                                                 <a href="home2.html" title="Home Page 2">Home Page 2</a>
@@ -130,7 +130,7 @@
                                     <div class="dropdown-menu">
                                         <ul>
                                             <li class="item">
-                                                <a href="blogs-list.html" title="Blog List (Sidebar Left)">Blog List (Sidebar Left)</a>
+                                                <a href="{% url 'blogs:list' %}" title="Blog List (Sidebar Left)">Blog List (Sidebar Left)</a>
                                             </li>
                                             <li class="item">
                                                 <a href="blog-list-sidebar-left2.html" title="Blog List (Sidebar Left) 2">Blog List (Sidebar Left) 2</a>
@@ -145,7 +145,7 @@
                                                 <a href="blog-grid-no-sidebar.html" title="Blog Grid (No Sidebar)">Blog Grid (No Sidebar)</a>
                                             </li>
                                             <li class="item">
-                                                <a href="blog-detail.html" title="Blog Detail">Blog Detail</a>
+                                                <a href="{% url 'blogs:list' %}" title="Blog Detail">Blog Detail</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -162,7 +162,7 @@
                                                             <div class="menu-content">
                                                                 <ul class="col">
                                                                     <li>
-                                                                        <a href="products-list.html">Product Grid (Sidebar Left)</a>
+                                                                        <a href="{% url 'products:list' %}">Product Grid (Sidebar Left)</a>
                                                                     </li>
                                                                     <li>
                                                                         <a href="product-grid-sidebar-right.html">Product Grid (Sidebar Right)</a>
@@ -178,7 +178,7 @@
                                                             <div class="menu-content">
                                                                 <ul>
                                                                     <li>
-                                                                        <a href="product-detail.html">Product Detail (Sidebar Left)</a>
+                                                                        <a href="{% url 'products:list' %}">Product Detail (Sidebar Left)</a>
                                                                     </li>
                                                                     <li>
                                                                         <a href="#">Product Detail (Sidebar Right)</a>
@@ -191,10 +191,10 @@
                                                             <div class="menu-content">
                                                                 <ul>
                                                                     <li>
-                                                                        <a href="404.html">404 Page</a>
+                                                                        <a href="#">404 Page</a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="about-us.html">About Us Page</a>
+                                                                        <a href="{% url 'shared:about' %}">About Us Page</a>
                                                                     </li>
                                                                 </ul>
                                                             </div>
@@ -206,7 +206,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="contact.html" class="parent">Contact US</a>
+                                    <a href="{% url 'shared:contact' %}" class="parent">Contact US</a>
                                 </li>
                             </ul>
                         </div>
@@ -234,31 +234,31 @@
                             <div id="acount" class="collapse">
                                 <div class="account-list-content">
                                     <div>
-                                        <a class="login" href="account.html" rel="nofollow" title="Log in to your customer account">
+                                        <a class="login" href="#" rel="nofollow" title="Log in to your customer account">
                                             <i class="fa fa-cog"></i>
                                             <span>My Account</span>
                                         </a>
                                     </div>
                                     <div>
-                                        <a class="login" href="login.html" rel="nofollow" title="Log in to your customer account">
+                                        <a class="login" href="#" rel="nofollow" title="Log in to your customer account">
                                             <i class="fa fa-sign-in"></i>
                                             <span>Sign in</span>
                                         </a>
                                     </div>
                                     <div>
-                                        <a class="register" href="register.html" rel="nofollow" title="Register Account">
+                                        <a class="register" href="#" rel="nofollow" title="Register Account">
                                             <i class="fa fa-user"></i>
                                             <span>Register Account</span>
                                         </a>
                                     </div>
                                     <div>
-                                        <a class="check-out" href="checkout.html" rel="nofollow" title="Checkout">
+                                        <a class="check-out" href="#" rel="nofollow" title="Checkout">
                                             <i class="fa fa-check" aria-hidden="true"></i>
                                             <span>Checkout</span>
                                         </a>
                                     </div>
                                     <div class="link_wishlist">
-                                        <a href="wishlist.html" title="My Wishlists">
+                                        <a href="#" title="My Wishlists">
                                             <i class="fa fa-heart"></i>
                                             <span>My Wishlists</span>
                                         </a>
@@ -277,22 +277,22 @@
                                         <ul class="list-inline">
                                             <li class="list-inline-itemcurrent">
                                                 <a href="#">
-                                                    <img class="img-fluid" src="img/home/home1-flas.jpg" alt="English" width="16" height="11">
+                                                    <img class="img-fluid" src="{% static 'img/home/home1-flas.jpg' %}" alt="English" width="16" height="11">
                                                 </a>
                                             </li>
                                             <li class="list-inline-item">
                                                 <a href="#">
-                                                    <img class="img-fluid" src="img/home/home1-flas2.jpg" alt="Italiano" width="16" height="11">
+                                                    <img class="img-fluid" src="{% static 'img/home/home1-flas2.jpg' %}" alt="Italiano" width="16" height="11">
                                                 </a>
                                             </li>
                                             <li class="list-inline-item">
                                                 <a href="#">
-                                                    <img class="img-fluid" src="img/home/home1-flas3.jpg" alt="Français" width="16" height="11">
+                                                    <img class="img-fluid" src="{% static 'img/home/home1-flas3.jpg' %}" alt="Français" width="16" height="11">
                                                 </a>
                                             </li>
                                             <li class="list-inline-item">
                                                 <a href="#">
-                                                    <img class="img-fluid" src="img/home/home1-flas4.jpg" alt="Español" width="16" height="11">
+                                                    <img class="img-fluid" src="{% static 'img/home/home1-flas4.jpg' %}" alt="Español" width="16" height="11">
                                                 </a>
                                             </li>
                                         </ul>
@@ -312,13 +312,13 @@
                                             <tbody>
                                                 <tr>
                                                     <td class="product-image">
-                                                        <a href="product-detail.html">
-                                                            <img src="img/product/5.jpg" alt="Product">
+                                                        <a href="{% url 'products:list' %}">
+                                                            <img src="{% static 'img/product/5.jpg' %}" alt="Product">
                                                         </a>
                                                     </td>
                                                     <td>
                                                         <div class="product-name">
-                                                            <a href="product-detail.html">Organic Strawberry Fruits</a>
+                                                            <a href="{% url 'products:list' %}">Organic Strawberry Fruits</a>
                                                         </div>
                                                         <div>
                                                             2 x
@@ -339,8 +339,8 @@
                                                 <tr>
                                                     <td colspan="3" class="d-flex justify-content-center">
                                                         <div class="cart-button">
-                                                            <a href="cart.html" title="View Cart">View Cart</a>
-                                                            <a href="checkout.html" title="Checkout">Checkout</a>
+                                                            <a href="#" title="View Cart">View Cart</a>
+                                                            <a href="#" title="Checkout">Checkout</a>
                                                         </div>
                                                     </td>
                                                 </tr>
