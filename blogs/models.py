@@ -1,42 +1,89 @@
+
 from django.db import models
 
-# Create your models here.
+from shared.models import BaseModel
 
-class Category(models.Model):
-    title = models.CharField(max_length=32)
-    
+
+class Author(BaseModel):
+    full_name = models.CharField(max_length=128)
+    image = models.ImageField(upload_to='authors/')
+    about = models.CharField(max_length=255)
+    professions = models.CharField(max_length=128)
+    is_active = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.full_name
+
     class Meta:
-        db_table = 'category'
+        db_table = 'authors'
+        verbose_name = 'author'
+        verbose_name_plural = 'authors'
+
+
+class Category(BaseModel):
+    title = models.CharField(max_length=128)
+    parent = models.ForeignKey(
+        'self',
+        on_delete=models.PROTECT,
+        related_name='children',
+        null=True, blank=True
+    )
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        db_table = 'categories'
         verbose_name = 'category'
         verbose_name_plural = 'categories'
-        
-    def __str__(self):
-        return f"{self.id} | {self.title}"
 
-class Post(models.Model):
-    title = models.CharField(max_length=32)
-    image = models.ImageField(upload_to='products/')
-    info = models.CharField(max_length=128)
-        
-    category = models.ForeignKey(
-        "Category", on_delete=models.PROTECT)
-    
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    
-    class Meta:
-        db_table = 'post'
-        verbose_name = 'post'
-        verbose_name_plural = 'posts'
-        
-    def __str__(self):
-        return f"{self.id} | {self.title}"
-    
-class Tag(models.Model):
+
+class Tag(BaseModel):
     title = models.CharField(max_length=128)
-    
+
+    def __str__(self):
+        return self.title
+
     class Meta:
-        db_table = 'tag'
+        db_table = 'tags'
         verbose_name = 'tag'
         verbose_name_plural = 'tags'
-        
+
+
+class BlogStatus(models.TextChoices):
+    PUBLISHED = "PUBLISHED", "Published"
+    DRAFT = "DRAFT", "Draft"
+    DELETED = "DELETED", "Deleted"
+
+
+class Blog(BaseModel):
+    title = models.CharField(max_length=128)
+    short_description = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='blogs/', null=True, blank=True)
+
+    # this will change into rich text uploading field
+    long_description = models.TextField()
+
+    status = models.CharField(
+        max_length=20,
+        choices=BlogStatus.choices,
+        default=BlogStatus.DRAFT
+    )
+
+    categories = models.ManyToManyField(
+        Category, related_name='blogs'
+    )
+    tags = models.ManyToManyField(
+        Tag, related_name='blogs'
+    )
+    authors = models.ManyToManyField(
+        Author, related_name='blogs'
+    )
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        db_table = 'blogs'
+        verbose_name = 'blog'
+        verbose_name_plural = 'blogs'
