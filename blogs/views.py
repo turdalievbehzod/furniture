@@ -1,7 +1,9 @@
 from django.shortcuts import render
 
-# Create your views here.
-
 
 def blogs_list_view(request):
     return render(request, 'blogs/blogs-list.html')
+
+
+def blog_detail_view(request, pk=None):
+    return render(request, 'blogs/blog-detail.html')
