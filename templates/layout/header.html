@@ -72,8 +72,8 @@
                                         <tr>
                                             <td colspan="3" class="d-flex justify-content-center">
                                                 <div class="cart-button">
-                                                    <a href="#" title="View Cart">View Cart</a>
-                                                    <a href="#" title="Checkout">Checkout</a>
+                                                    <a href="{% url 'products:cart' %}" title="View Cart">View Cart</a>
+                                                    <a href="{% url 'products:checkout' %}" title="Checkout">Checkout</a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -104,54 +104,27 @@
                         <div class="menu navbar collapse navbar-collapse">
                             <ul class="menu-top navbar-nav">
                                 <li>
-                                    <a href="#" class="parent">Home</a>
+                                    <a href="{% url 'shared:home' %}" class="parent">Home</a>
                                     <div class="dropdown-menu">
                                         <ul>
                                             <li class="item">
-                                                <a href="{% url 'shared:home' %}" title="Home Page 1">Home Page 1</a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="home2.html" title="Home Page 2">Home Page 2</a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="home3.html" title="Home Page 3">Home Page 3</a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="home4.html" title="Home Page 4">Home Page 4</a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="home5.html" title="Home Page 5">Home Page 5</a>
+                                                <a href="{% url 'shared:home' %}" title="Home Page">Home Page</a>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="#" class="parent">Blog</a>
+                                    <a href="{% url 'blogs:list' %}" class="parent">Blog</a>
                                     <div class="dropdown-menu">
                                         <ul>
                                             <li class="item">
-                                                <a href="{% url 'blogs:list' %}" title="Blog List (Sidebar Left)">Blog List (Sidebar Left)</a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="blog-list-sidebar-left2.html" title="Blog List (Sidebar Left) 2">Blog List (Sidebar Left) 2</a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="blog-list-sidebar-right.html" title="Category Blog (Right column)">Blog List (Sidebar Right)</a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="blog-list-no-sidebar.html" title="Blog List (No Sidebar)">Blog List (No Sidebar)</a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="blog-grid-no-sidebar.html" title="Blog Grid (No Sidebar)">Blog Grid (No Sidebar)</a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="{% url 'blogs:list' %}" title="Blog Detail">Blog Detail</a>
+                                                <a href="{% url 'blogs:list' %}" title="Blog List">Blog List</a>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li class="nav-link">
-                                    <a href="#" class="parent">Page</a>
+                                    <a href="{% url 'products:list' %}" class="parent">Page</a>
                                     <div class="dropdown-menu drop-tab">
                                         <ul>
                                             <li class="item container group">
@@ -162,13 +135,13 @@
                                                             <div class="menu-content">
                                                                 <ul class="col">
                                                                     <li>
-                                                                        <a href="{% url 'products:list' %}">Product Grid (Sidebar Left)</a>
+                                                                        <a href="{% url 'products:list' %}">Products List</a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="product-grid-sidebar-right.html">Product Grid (Sidebar Right)</a>
+                                                                        <a href="{% url 'products:detail' %}">Product Detail</a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="product-list-sidebar-left.html">Product List (Sidebar left) </a>
+                                                                        <a href="{% url 'products:cart' %}">Cart</a>
                                                                     </li>
                                                                 </ul>
                                                             </div>
@@ -178,10 +151,10 @@
                                                             <div class="menu-content">
                                                                 <ul>
                                                                     <li>
-                                                                        <a href="{% url 'products:list' %}">Product Detail (Sidebar Left)</a>
+                                                                        <a href="{% url 'products:checkout' %}">Checkout</a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="#">Product Detail (Sidebar Right)</a>
+                                                                        <a href="{% url 'products:wishlist' %}">Wishlist</a>
                                                                     </li>
                                                                 </ul>
                                                             </div>
@@ -191,10 +164,10 @@
                                                             <div class="menu-content">
                                                                 <ul>
                                                                     <li>
-                                                                        <a href="#">404 Page</a>
+                                                                        <a href="{% url 'shared:about' %}">About Us Page</a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="{% url 'shared:about' %}">About Us Page</a>
+                                                                        <a href="{% url 'shared:contact' %}">Contact Us Page</a>
                                                                     </li>
                                                                 </ul>
                                                             </div>
@@ -234,31 +207,31 @@
                             <div id="acount" class="collapse">
                                 <div class="account-list-content">
                                     <div>
-                                        <a class="login" href="#" rel="nofollow" title="Log in to your customer account">
+                                        <a class="login" href="{% url 'users:account' %}" rel="nofollow" title="Log in to your customer account">
                                             <i class="fa fa-cog"></i>
                                             <span>My Account</span>
                                         </a>
                                     </div>
                                     <div>
-                                        <a class="login" href="#" rel="nofollow" title="Log in to your customer account">
+                                        <a class="login" href="{% url 'users:login' %}" rel="nofollow" title="Log in to your customer account">
                                             <i class="fa fa-sign-in"></i>
                                             <span>Sign in</span>
                                         </a>
                                     </div>
                                     <div>
-                                        <a class="register" href="#" rel="nofollow" title="Register Account">
+                                        <a class="register" href="{% url 'users:register' %}" rel="nofollow" title="Register Account">
                                             <i class="fa fa-user"></i>
                                             <span>Register Account</span>
                                         </a>
                                     </div>
                                     <div>
-                                        <a class="check-out" href="#" rel="nofollow" title="Checkout">
+                                        <a class="check-out" href="{% url 'products:checkout' %}" rel="nofollow" title="Checkout">
                                             <i class="fa fa-check" aria-hidden="true"></i>
                                             <span>Checkout</span>
                                         </a>
                                     </div>
                                     <div class="link_wishlist">
-                                        <a href="#" title="My Wishlists">
+                                        <a href="{% url 'products:wishlist' %}" title="My Wishlists">
                                             <i class="fa fa-heart"></i>
                                             <span>My Wishlists</span>
                                         </a>
@@ -339,8 +312,8 @@
                                                 <tr>
                                                     <td colspan="3" class="d-flex justify-content-center">
                                                         <div class="cart-button">
-                                                            <a href="#" title="View Cart">View Cart</a>
-                                                            <a href="#" title="Checkout">Checkout</a>
+                                                            <a href="{% url 'products:cart' %}" title="View Cart">View Cart</a>
+                                                            <a href="{% url 'products:checkout' %}" title="Checkout">Checkout</a>
                                                         </div>
                                                     </td>
                                                 </tr>
