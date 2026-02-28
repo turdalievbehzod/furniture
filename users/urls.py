@@ -1,6 +1,4 @@
-from django.urls import path, re_path
-
-from shared.views import legacy_html_redirect_view
+from django.urls import path
 from users.views import login_view, register_view, account_view, reset_password_view
 
 app_name = 'users'
@@ -14,5 +12,4 @@ urlpatterns = [
     path('account.html', account_view, name='account-html'),
     path('reset-password/', reset_password_view, name='reset-password'),
     path('reset-password.html', reset_password_view, name='reset-password-html'),
-    re_path(r'^(?P<page>[\w-]+)\.html$', legacy_html_redirect_view),
 ]

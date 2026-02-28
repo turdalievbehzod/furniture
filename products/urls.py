@@ -1,5 +1,4 @@
-from django.urls import path, re_path
-
+from django.urls import path
 from products.views import (
     products_list_view,
     product_detail_view,
@@ -7,7 +6,6 @@ from products.views import (
     checkout_view,
     wishlist_view,
 )
-from shared.views import legacy_html_redirect_view
 
 app_name = 'products'
 
@@ -22,5 +20,4 @@ urlpatterns = [
     path('checkout.html', checkout_view, name='checkout-html'),
     path('wishlist/', wishlist_view, name='wishlist'),
     path('wishlist.html', wishlist_view, name='wishlist-html'),
-    re_path(r'^(?P<page>[\w-]+)\.html$', legacy_html_redirect_view),
 ]
