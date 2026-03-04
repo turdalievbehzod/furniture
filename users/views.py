@@ -1,10 +1,10 @@
 import threading
 
 from django.shortcuts import redirect, render
-from django.contrib.sites.shortcuts import get_current_site
 from django.core.mail import send_mail
+from django.urls import reverse
 
-from users.forms import CustomUserCreationForm
+from users.forms import CustomAuthenticationForm, CustomUserCreationForm
 from django.contrib import messages
 from django.utils.encoding import force_bytes, force_str
 from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
@@ -14,7 +14,23 @@ from django.contrib.auth import get_user_model, login
 User = get_user_model()
 
 def login_view(request):
-    return render(request, 'users/login.html')
+    if request.method == 'POST':
+        form = CustomAuthenticationForm(request=request, data=request.POST)
+        if form.is_valid():
+            user = form.cleaned_data['user']
+            login(request, user)
+            return redirect('shared:home')
+        else:
+            errors = []
+            for field, field_errors in form.errors.items():
+                for error in field_errors:
+                    errors.append(f"{field}: {error}")
+
+            error_text = " | ".join(errors)
+            messages.error(request, error_text)
+            return render(request, 'users/login.html', )
+    else:
+        return render(request, 'users/login.html', )
 
 
 def register_view(request):
@@ -28,8 +44,9 @@ def register_view(request):
                 # send verificaton link
                 uid = urlsafe_base64_encode(force_bytes(user.pk))
                 token = email_verification_token.make_token(user)
-                domain = get_current_site(request).domain
-                link = f'http://{domain}/verify/{uid}/{token}/'
+                
+                link = request.build_absolute_uri(
+                    reverse('users:verify-email', kwargs={'uidb64': uid, 'token': token}))
                 
                 thread = threading.Thread(target=send_mail, kwargs={
                     'subject':'Verify your email',
